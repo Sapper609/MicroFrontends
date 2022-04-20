@@ -1,0 +1,21 @@
+{
+  "name": "phpbreakdown",
+  "version": "1.0.0",
+  "description": "breaking down a php application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eric Gilchrist",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sapper609/ElixirBodyInventory/issues"
+  },
+  "homepage": "https://github.com/Sapper609/ElixirBodyInventory#readme",
+  "dependencies": {
+    "single-spa": "^5.9.3"
+  },
+  "devDependencies": {
+    "composer": "^4.1.0"
+  }
+}

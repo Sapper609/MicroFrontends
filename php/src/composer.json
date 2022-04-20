@@ -1,0 +1,15 @@
+{
+    "name": "egilc/src",
+    "autoload": {
+        "psr-4": {
+            "app\\": "./"
+        }
+    },
+    "authors": [
+        {
+            "name": "Sapper609",
+            "email": "egilchrist0110@gmail.com"
+        }
+    ],
+    "require": {}
+}

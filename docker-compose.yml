@@ -1,0 +1,31 @@
+version: '3.4'
+services:
+  ### ROOT CONFIG CONTAINER -- SHELL ###
+  root-config:
+    container_name: root
+    build:
+        context: ./root-config
+        dockerfile: ./DockerFile
+    ports:
+        - 8080:80
+  ### MICRO APPLICATIONS (MFE) ###
+  mfe-php:
+    container_name: php
+    build:
+       context: ./php
+       dockerfile: ./DockerFile
+    volumes:
+        - ./php/src:/var/www/public
+    ports:
+        - 8081:80
+  mfe-react:
+    container_name: react
+    build:
+       context: ./react
+       dockerfile: ./DockerFile
+    volumes:
+        - ./react/src:/var/www/public
+    ports:
+        - 8082:80
+networks:
+  default:
