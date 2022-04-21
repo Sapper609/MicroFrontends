@@ -13,11 +13,8 @@ This repository uses **Docker** to run all of its code. To run this repository, 
 
 # Remarks
 This repository is a demonstration on how to use SingleSPA in a monolithic PHP application and inject a React based project. To read more about the underlying technologies used in this repository, click on the following links
-- [Single SPA Read ME](docs/SingleSPA.md)
-- [Docker Read ME](docs/Docker.md)
-- [React Read ME](docs/React.md)
 - [Single SPA Website](https://single-spa.js.org/)
-- [Monolithic vs Micro Frontend](https://micro-frontends.org/)
 - [Docker Website](https://www.docker.com/)
-- [Docker Hub](https://hub.docker.com/)
 - [React Website](https://reactjs.org/)
+- [Monolithic vs Micro Frontend](https://micro-frontends.org/)
+- [Docker Hub](https://hub.docker.com/)
