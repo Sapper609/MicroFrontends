@@ -1,23 +1,16 @@
-import { BrowserRouter, Link, Route } from "react-router-dom";
-
 export default function Root(props) {
   const refStyle = {
     padding: "24px",
-    display: "inline-block",
-    color: "black"
+    color: "black",
+    textAlign: "center"
   }
 
   return (
-    <BrowserRouter basename="/">
-      <Link to="/react" style={refStyle}>
-        React Home
-      </Link>
-      <Link to="/react/subroute" style={refStyle}>
-        React SubRoute
-      </Link>
-      <Link to="/" style={refStyle}>
-        Leave React
-      </Link>
-    </BrowserRouter>
+    <div style={refStyle}>
+      <h1> React Application ! </h1>
+      <p> This is being displayed from the <b> React </b> application!! </p>
+      <p> This page can be modified from the react directory and changing out the content in the <b>root.component.jsx</b> file </p>
+      <p> This file is being imported through single spa and routed through the <b>spa.php</b> file in the php application! </p>
+    </div>
   );
 }
