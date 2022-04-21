@@ -4,7 +4,7 @@ registerApplication({
   name: "@mfe/react",
   app: () =>
     System.import("@mfe/react"),
-  activeWhen: ["/"],
+  activeWhen: ["/react"],
 });
 
 start({

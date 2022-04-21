@@ -17,7 +17,7 @@
             "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js",
             "react": "https://cdn.jsdelivr.net/npm/react@16.13.1/umd/react.production.min.js",
             "react-dom": "https://cdn.jsdelivr.net/npm/react-dom@16.13.1/umd/react-dom.production.min.js",
-            "@mfe/root-config": "//localhost:8080/mfe-root-config.js",
+            "@mfe/root-config": "//localhost:8081/mfe-root-config.js",
             "@mfe/react": "//localhost:8082/mfe-react.js"
         }
     }
@@ -54,8 +54,5 @@
             </div>
         </div>
         </nav>
-
-        {{content}}
-
   </body>
 </html>

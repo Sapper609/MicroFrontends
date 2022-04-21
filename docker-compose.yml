@@ -7,7 +7,7 @@ services:
         context: ./root-config
         dockerfile: ./DockerFile
     ports:
-        - 8080:80
+        - 8081:80
   ### MICRO APPLICATIONS (MFE) ###
   mfe-php:
     container_name: php
@@ -15,7 +15,7 @@ services:
        context: ./php
        dockerfile: ./DockerFile
     ports:
-        - 8081:80
+        - 8080:80
   mfe-react:
     container_name: react
     build:
