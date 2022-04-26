@@ -8,6 +8,15 @@ services:
         dockerfile: ./DockerFile
     ports:
         - 8081:80
+  ### AUTHENTICATION ###
+  keycloak:
+      container_name: keycloak
+      image: jboss/keycloak
+      environment:
+        KEYCLOAK_ADMIN: admin
+        KEYCLOAK_ADMIN_PASSWORD: Password123!
+      ports:
+        - 8083:8080
   ### MICRO APPLICATIONS (MFE) ###
   mfe-php:
     container_name: php
