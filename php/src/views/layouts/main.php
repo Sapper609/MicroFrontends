@@ -22,10 +22,10 @@
                         <a class="nav-link active" aria-current="page" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/customer">Customers</a>
+                        <a class="nav-link" href="/customer">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/react">React</a>
+                        <a class="nav-link" href="/react">Settings</a>
                     </li>
                 </ul>
             </div>
