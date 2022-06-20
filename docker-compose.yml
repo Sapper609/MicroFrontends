@@ -8,6 +8,35 @@ services:
         dockerfile: ./DockerFile
     ports:
         - 8081:80
+  postgres:
+    image: postgres:12.2
+    restart: unless-stopped
+    container_name: postgres
+    environment:
+      POSTGRES_DB: keycloak
+      POSTGRES_USER: keycloak
+      POSTGRES_PASSWORD: password
+    networks:
+      - local-keycloak
+  ### AUTHORIZATION -- KEYCLOAK ###
+  keycloak:
+    depends_on:
+      - postgres
+    container_name: local_keycloak
+    image: jboss/keycloak
+    ports: 
+      - 8080:8080
+    environment:
+      - KEYCLOAK_USER=admin
+      - KEYCLOAK_PASSWORD=admin
+      - DB_VENDOR=POSTGRES
+      - DB_ADDR=postgres
+      - DB_DATABASE=keycloak
+      - DB_USER=keycloak
+      - DB_PASSWORD=password
+    restart: unless-stopped
+    networks:
+      - local-keycloak
   ### MICRO APPLICATIONS (MFE) ###
   mfe-php:
     container_name: php
@@ -15,7 +44,7 @@ services:
        context: ./php
        dockerfile: ./DockerFile
     ports:
-        - 8080:80
+        - 8000:80
   mfe-react:
     container_name: react
     build:
@@ -24,4 +53,4 @@ services:
     ports:
         - 8082:80
 networks:
-  default:
+  local-keycloak:

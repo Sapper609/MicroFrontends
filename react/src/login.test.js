@@ -1,5 +1,5 @@
 import { render } from "@testing-library/react";
-import Root from "./keycloak-app";
+import Root from "./root.login";
 
 describe("Root component", () => {
   it("should be in the document", () => {

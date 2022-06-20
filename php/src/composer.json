@@ -11,5 +11,7 @@
             "email": "egilchrist0110@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "jumbojett/openid-connect-php": "^0.9.6"
+    }
 }

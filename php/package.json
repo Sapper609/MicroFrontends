@@ -13,6 +13,7 @@
   },
   "homepage": "https://github.com/Sapper609/ElixirBodyInventory#readme",
   "dependencies": {
+    "keycloak-js": "^18.0.0",
     "single-spa": "^5.9.3"
   },
   "devDependencies": {

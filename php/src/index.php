@@ -12,5 +12,6 @@ $app = new Application(dirname(__DIR__));
 $app->router->get('/', 'home');
 $app->router->get('/customer', 'customers');
 $app->router->get('/react', 'spa');
+$app->router->get('/login', 'login');
 
 $app->run();

@@ -1,0 +1,5 @@
+2022-06-02 09:44:22 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "CLIENT_INITIAL_ACCESS" not found; SQL statement:
+delete from CLIENT_INITIAL_ACCESS where EXPIRATION>0 and TIMESTAMP+EXPIRATION<? or REMAINING_COUNT=0 [42102-197]
+2022-06-02 09:44:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: The object is already closed [90007-197]
